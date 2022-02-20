@@ -1,4 +1,4 @@
-## Wrestling with Apollo Local State and winning
+## Wrestling with Apollo Local State and Winning
 
 
 Recently we bought into [GraphQL](https://graphql.org/) and use it in every one of our web apps, both on the client and server level. It’s been helpful reducing unnecessary communication needed between our different teams when it comes to knowing what our many, many different API’s do. This contributes to our async work strategy and keeps developers moving and focusing on difficult problems versus organizational bloat.
