@@ -1,17 +1,5 @@
 ## A Better Way to use GraphQL Fragments in React
 
----
-title: A Better Way to use GraphQL Fragments in React
-published: true
-description: Defining fragments inside the components that render data brings many benefits.
-tags: react, graphql, javascript, storybook
-cover_image: https://res.cloudinary.com/dscgr6mcw/image/upload/v1589290038/react-fragment-post/kelly-sikkema-PMxoh8zJNb0-unsplash.jpg
-description: Defining fragments inside the components that render data brings many benefits.
-canonical_url: https://medium.com/@yourboybigal/a-better-way-to-use-graphql-fragments-in-react-4f54bf862062
----
-
-> Want more great content like this? Sign up for my newsletter, visit: [alec.coffee/signup](alec.coffee/newsletter)
-
 One of the great reasons to use a component-based framework (React, Vue) is that it allows for more isolated component design, which helps with decoupling and unit-testing. Another benefit is using showcase apps such as [Storybook](https://storybook.js.org/), these continue the philosophy of isolation and allow for design and prototyping outside the main application. When component count starts to grow and we start to fetch data, we need a new pattern, [the Container Component pattern](https://learn.co/lessons/react-container-components). If using GraphQL for your data transport, we want to keep using this pattern but with a new twist. When creating isolated components, they should define the data they need to render. This can be better achieved by each component, even presentational ones, defining the data they need to render with their own GraphQL fragment.
 
 ## Show Time
