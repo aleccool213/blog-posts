@@ -1,4 +1,13 @@
-## Using static site generation in Next.js, Gatsby.js, and Remix
+---
+title: "Using static site generation in Next.js, Gatsby.js, and Remix"
+datePublished: Wed Apr 27 2022 12:03:04 GMT+0000 (Coordinated Universal Time)
+cuid: cl5p9rqkn01oooqnvd1aualne
+slug: using-static-site-generation-in-nextjs-gatsbyjs-and-remix
+canonical: https://blog.logrocket.com/using-static-site-generation-modern-react-frameworks/
+cover: https://cdn.hashnode.com/res/hashnode/image/unsplash/ZNTPlG050tk/upload/v1658059287225/BgKvWQvGd.jpeg
+tags: reactjs, nextjs, gatsby, remix
+
+---
 
 If you are writing a web application in 2022, you are likely using modern frontend technologies like [React](https://reactjs.org/), [Vue](https://vuejs.org/), and [Svelte](https://svelte.dev/). You are also likely using an API to get the data necessary to render pages. 
 
