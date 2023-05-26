@@ -1,18 +1,16 @@
-## Publishing a JavaScript Package to NPM automatically with Github Actions
+---
+title: "Publishing a JavaScript Package to NPM automatically with Github Actions"
+datePublished: Wed Mar 25 2020 15:03:03 GMT+0000 (Coordinated Universal Time)
+cuid: ckzu9r2rl02ycids1crmpe9rf
+slug: publishing-javascript-package-automatically-with-github-actions
+cover: https://cdn.hashnode.com/res/hashnode/image/unsplash/wX2L8L-fGeA/upload/v1645301057771/o5w8yJRmGG.jpeg
+tags: github, npm, github-actions-1
 
 ---
-title: Publishing a JavaScript Package to NPM automatically with Github Actions
-published: true
-description: Maintaining an open-source package can be a time-consuming task.
-tags: javascript,npm,opensource,github
-cover_image: https://res.cloudinary.com/dscgr6mcw/image/upload/v1585055790/npm-publish-post/mak-2zGWHp_7V4Y-unsplash.jpg
-canonical_url: https://medium.com/better-programming/how-to-publish-a-javascript-package-to-npm-automatically-with-github-actions-1acde7b908d6
+
 ---
-> Want more great content like this? Sign up for my newsletter, visit: [alec.coffee/signup](alec.coffee/newsletter)
 
 Maintaining an open-source package can be a time-consuming task. Issues to be triaged, pull requests to be reviewed and changelogs to write. Publishing new versions of the code is usually done manually and making it automated is often on the back-burner of the maintainers' to-do list. There are a couple of key features of a rock-solid release process, the [changelog](https://www.techopedia.com/definition/13934/changelog), [Git tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging), [NPM versions](https://stackoverflow.com/questions/10972176/find-the-version-of-an-installed-npm-package), and enforcing [Semantic Versioning](https://semver.org/). Keeping all these in sync makes it so users understand changes in a release and understand how to keep up-to-date. Maintainers who fail to perform all of these steps will have a hard time triaging issues, which leads to more time debugging and less time spent coding. I recently came across a combo of tools, [semantic-release](https://github.com/semantic-release/semantic-release) and [Github Actions](https://github.com/features/actions), which made the entire release process automated, transparent, and simple to understand.
-
-{% github semantic-release/semantic-release %}
 
 ## How It Works
 
@@ -44,23 +42,24 @@ So semantic-release will be the tool to perform most of the work, but we still n
 
 We will be using as many defaults as possible to make configuration dead simple. semantic-release uses a plugins system to enhance functionality. [Here are the default plugins semantic-release uses.](https://github.com/semantic-release/semantic-release/blob/master/docs/usage/plugins.md#default-plugins)
 
-
 Let's go over the steps which will make this all run smoothly.
 
-1.  Add a dummy version property to the package.json of package. Released code will have the proper version written to this file by semantic-release.
+1. Add a dummy version property to the package.json of package. Released code will have the proper version written to this file by semantic-release.
+    
 
 ```json
         "version": "0.0.0-development",
 ```
 
-
-2.  Add a new property to the package.json, `publishConfig`. This will be the home of our semantic-release configuration.
+1. Add a new property to the package.json, `publishConfig`. This will be the home of our semantic-release configuration.
+    
 
 ```json
         "publishConfig": { "access": "public", "branches": ['master'] }
 ```
 
-3.  The last step is to create a Github Action YAML file. This will tell Github Actions what to do when a commit is made to the repository.
+1. The last step is to create a Github Action YAML file. This will tell Github Actions what to do when a commit is made to the repository.
+    
 
 ```yml
         # .github/workflows/test-and-release.yaml
@@ -90,10 +89,10 @@ Let's go over the steps which will make this all run smoothly.
                 run: npm run semantic-release
 ```
 
-
-4.  Add `NPM_TOKEN` to the secrets in the Github repos settings page. You can generate one of these from your NPM account at https://www.npmjs.com/settings/<username>/tokens
-
-    ![screenshot of github repo settings screen](https://cdn.hashnode.com/res/hashnode/image/upload/v1645301025702/Z7SaYZwFa.png)
+1. Add `NPM_TOKEN` to the secrets in the Github repos settings page. You can generate one of these from your NPM account at https://www.npmjs.com/settings//tokens
+    
+    ![screenshot of github repo settings screen](https://cdn.hashnode.com/res/hashnode/image/upload/v1645301025702/Z7SaYZwFa.png align="left")
+    
 
 And that's it! You have a fully automated package release process 🎉
 
