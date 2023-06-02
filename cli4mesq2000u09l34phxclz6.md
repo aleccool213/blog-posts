@@ -1,16 +1,14 @@
 ---
-title: "Using modern decorators in TypeScript"
+title: "Using EMCAScript decorators in TypeScript 5.0"
 datePublished: Fri Apr 28 2023 13:43:13 GMT+0000 (Coordinated Universal Time)
 cuid: cli4mesq2000u09l34phxclz6
-slug: using-modern-decorators-in-typescript
+slug: using-emcascript-decorators-in-typescript-50
 canonical: https://blog.logrocket.com/using-modern-decorators-typescript/
 tags: news, typescript, decorators
 
 ---
 
-# **Using modern decorators in TypeScript**
-
-[The State of Developer Ecosystem 2022](https://www.jetbrains.com/lp/devecosystem-2022/) crowned TypeScript the fastest-growing programming language. It’s not hard to see why. This popular superset of JavaScript provides type-checking, enums, and other enhancements. But often, TypeScript introduces long-awaited features that are not yet part of the ECMAScript standard that JavaScript relies on. 
+[The State of Developer Ecosystem 2022](https://www.jetbrains.com/lp/devecosystem-2022/) crowned TypeScript the fastest-growing programming language. It’s not hard to see why. This popular superset of JavaScript provides type-checking, enums, and other enhancements. But often, TypeScript introduces long-awaited features that are not yet part of the ECMAScript standard that JavaScript relies on.
 
 One example is the reintroduction of decorators in the [soon-to-be-released TypeScript 5.0](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/); decorators is a meta-programming technique that can be found in other programming languages. If you’re an application developer or library author who is interested in using the new official TypeScript decorators, you’ll want to adopt the new syntax and understand the differences between the old and new feature sets. The API differences are extensive and it is unlikely that old decorators will work with the new syntax out of the box.
 
@@ -361,7 +359,7 @@ function debugMethod<TThis, TArgs extends [string], TReturn>(
 ...
 ```
 
-In theory, we could use this approach to refactor decorators that depend on getting types from Reflect for `design:type`, `design:paramtypes`, and `design:returntype`. This is a different way to write decorators; it is not a simple refactor because it requires using TypeScript type inference to refactor how types are acquired and validated. 
+In theory, we could use this approach to refactor decorators that depend on getting types from Reflect for `design:type`, `design:paramtypes`, and `design:returntype`. This is a different way to write decorators; it is not a simple refactor because it requires using TypeScript type inference to refactor how types are acquired and validated.
 
 ## Conclusion
 
