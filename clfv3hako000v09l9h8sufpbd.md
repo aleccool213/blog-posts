@@ -1,8 +1,8 @@
 ---
-title: "Version management with the changesets NPM package"
+title: "Monorepo version management with the changesets NPM package"
 datePublished: Tue Dec 27 2022 13:31:07 GMT+0000 (Coordinated Universal Time)
 cuid: clfv3hako000v09l9h8sufpbd
-slug: version-management-with-the-changesets-npm-package
+slug: monorepo-version-management-with-the-changesets-npm-package
 canonical: https://blog.logrocket.com/version-management-changesets/
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/sJa0qmawWnM/upload/c0297949de7f7893406a1ea4f97ae784.jpeg
 tags: opensource, npm, monorepo
