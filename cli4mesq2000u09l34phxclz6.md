@@ -4,6 +4,7 @@ datePublished: Fri Apr 28 2023 13:43:13 GMT+0000 (Coordinated Universal Time)
 cuid: cli4mesq2000u09l34phxclz6
 slug: using-emcascript-decorators-in-typescript-50
 canonical: https://blog.logrocket.com/using-modern-decorators-typescript/
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/1seONCyPWfQ/upload/b62ef1f7e8e857bf4e880a842fc51b3a.jpeg
 tags: news, typescript, decorators
 
 ---
